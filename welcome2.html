@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <form action="/action_page.php">
+<style>
+body{
+padding:20px;
+background-color:rgb(200,50,69);
+resize: vertical;
+overflow: auto;
+background-image:url(pic.png);
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+
+</style>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+</div>
+<div id="flip">Click the Instruction panel</div>
+<div id="panel">Hello VITians!</div>
+
+<style>
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+
+
+<p align="center">
+<iframe width="360" height="240" style="float:bottom" align="bottom"  src="https://www.youtube.com/embed/J4J0ocDLVVE"> 
+</iframe>
+</p>
+<style>
+iframe{
+   position: absolute;
+   left: 480px;
+   bottom: 0;
+}
+</style>
+
+</body>
+</html>
